@@ -1,0 +1,9 @@
+/**
+ * Basic typography style for copy text
+ */
+body {
+  font: normal normal 400 var(--normal-font-size) / 1.4 var(--body-font);
+  background-color: var(--body-color);
+  color: var(--text-color);
+  transition: background-color 0.3s ease-in-out; /* for dark mode animation */
+}
