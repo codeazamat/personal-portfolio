@@ -23,7 +23,7 @@
       left: calc(50% - 3rem);
       right: auto;
       &::after {
-        content: url("../../public/img/arrow-prev.svg");
+        content: url('../../public/img/arrow-prev.svg');
       }
     }
 
@@ -31,7 +31,7 @@
       left: auto;
       right: calc(50% - 3rem);
       &::after {
-        content: url("../../public/img/arrow-next.svg");
+        content: url('../../public/img/arrow-next.svg');
       }
     }
   }

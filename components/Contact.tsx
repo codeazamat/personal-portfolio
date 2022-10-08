@@ -1,6 +1,27 @@
 import Link from 'next/link'
+import { useForm } from 'react-hook-form'
+
+type FormValues = {
+  username: string
+  email: string
+  message: string
+}
 
 const Contact = () => {
+  const { register, handleSubmit, reset, formState: { errors, isValid } } = useForm<FormValues>({
+    mode: 'onChange',
+    defaultValues:{
+      username: '',
+      email: '',
+      message: ''
+    }
+  })
+
+  const formSubmit = (data: FormValues) => {
+    console.log(data)
+    reset()
+  }
+
   return (
     <section className="contact section" id="contact">
       <h2 className="section__title">Contact Me</h2>
@@ -47,18 +68,21 @@ const Contact = () => {
             <i className="ri-send-plane-line"></i> Write me your project
           </h3>
 
-          <form className="contact__form">
+          <form className="contact__form" onSubmit={handleSubmit(formSubmit)}>
             <div className="contact__form-div">
               <label className="contact__form-tag" htmlFor="user-name">
                 Names
               </label>
               <input
+                {...register('username', { required: 'Username is required', minLength: 3, maxLength: 20 })}
                 className="contact__form-input"
-                id="user-name"
+                id="username"
                 type="text"
                 placeholder="Write your names"
-                name="user-name"
+                name="username"
+                autoComplete={'off'}
               />
+              {errors.username && <span className="contact__form-error">{errors.username.message}</span>}
             </div>
 
             <div className="contact__form-div">
@@ -66,12 +90,15 @@ const Contact = () => {
                 Email
               </label>
               <input
+                {...register('email', { required: 'Email is required' })}
                 className="contact__form-input"
-                id="user-email"
+                id="email"
                 type="text"
                 placeholder="Write your email"
-                name="user-email"
+                name="email"
+                autoComplete={'off'}
               />
+              {errors.email && <span className="contact__form-error">{errors.email.message}</span>}
             </div>
 
             <div className="contact__form-div contact__form-area">
@@ -79,14 +106,16 @@ const Contact = () => {
                 Project
               </label>
               <textarea
+                {...register('message', { required: 'Message is required' })}
                 className="contact__form-input"
-                id="user-project"
+                id="message"
                 placeholder="Write your project"
-                name="user-project"
+                name="message"
               ></textarea>
+              {errors.message && <span className="contact__form-error">{errors.message.message}</span>}
             </div>
 
-            <button className="contact__button" type="submit">
+            <button className="contact__button" type="submit" disabled={!isValid}>
               Submit <i className="ri-arrow-right-up-line"></i>
             </button>
           </form>

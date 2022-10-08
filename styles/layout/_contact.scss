@@ -1,5 +1,4 @@
 .contact {
-
   &__container {
     row-gap: 3.5rem;
   }
@@ -63,7 +62,7 @@
 
   &__form {
     position: relative;
-    row-gap: 2rem;
+    row-gap: 2.25rem;
   }
 
   &__form-div {
@@ -86,6 +85,15 @@
     background: none;
     outline: none;
     z-index: 1;
+  }
+
+  &__form-error {
+    position: absolute;
+    bottom: -1.25rem;
+    left: 0;
+    font-size: var(--small-font-size);
+    padding-left: 1rem;
+    color: hsl(4, 71%, 50%);
   }
 
   &__form-tag {
@@ -123,6 +131,9 @@
 
     &:hover i {
       transform: translateX(0.25rem);
+    }
+    &:disabled i {
+      transform: translateX(0);
     }
 
     i {
