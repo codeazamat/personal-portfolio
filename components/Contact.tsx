@@ -23,7 +23,7 @@ const Contact = () => {
               <span className="contact__data-info">+998 (95) 004-40-48</span>
 
               <Link href={'https://t.me/azamatcode'}>
-                <a className="contact__button" target="_blank">
+                <a className="contact__link" target="_blank">
                   Write me <i className="ri-arrow-right-line"></i>
                 </a>
               </Link>
@@ -34,7 +34,7 @@ const Contact = () => {
               <span className="contact__data-info">@azamatcode</span>
 
               <Link href={'https://www.instagram.com/azamatcode/'}>
-                <a className="contact__button" target="_blank">
+                <a className="contact__link" target="_blank">
                   Write me <i className="ri-arrow-right-line"></i>
                 </a>
               </Link>
