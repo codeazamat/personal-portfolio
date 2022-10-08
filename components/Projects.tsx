@@ -1,6 +1,5 @@
 import Image from 'next/image'
 import Link from 'next/link'
-import 'remixicon/fonts/remixicon.css'
 import { Swiper, SwiperSlide } from 'swiper/react'
 import { Navigation, Pagination } from 'swiper'
 
@@ -18,9 +17,26 @@ const Projects = () => {
       <div className="container section__border">
         <div className="projects__container">
           <Swiper
+            className="projects__swiper"
             modules={[Navigation, Pagination]}
-            spaceBetween={24}
-            slidesPerView={1}
+            breakpoints={{
+              0: {
+                slidesPerView: 1,
+                spaceBetween: 25
+              },
+              768: {
+                slidesPerView: 2,
+                spaceBetween: 25
+              },
+              1024: {
+                slidesPerView: 3,
+                spaceBetween: 25
+              },
+              1280: {
+                slidesPerView: 3,
+                spaceBetween: 25
+              }
+            }}
             navigation
             pagination={{ clickable: true }}
           >
