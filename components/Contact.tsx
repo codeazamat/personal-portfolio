@@ -1,4 +1,4 @@
-import Link from "next/link";
+import Link from 'next/link'
 
 const Contact = () => {
   return (
@@ -49,18 +49,41 @@ const Contact = () => {
 
           <form className="contact__form">
             <div className="contact__form-div">
-              <label className="contact__form-tag" htmlFor="user-name">Names</label>
-              <input className="contact__form-input" id="user-name" type="text" placeholder="Write your names" name="user-name" />
+              <label className="contact__form-tag" htmlFor="user-name">
+                Names
+              </label>
+              <input
+                className="contact__form-input"
+                id="user-name"
+                type="text"
+                placeholder="Write your names"
+                name="user-name"
+              />
             </div>
 
             <div className="contact__form-div">
-              <label className="contact__form-tag" htmlFor="user-email">Email</label>
-              <input className="contact__form-input" id="user-email" type="text" placeholder="Write your email" name="user-email" />
+              <label className="contact__form-tag" htmlFor="user-email">
+                Email
+              </label>
+              <input
+                className="contact__form-input"
+                id="user-email"
+                type="text"
+                placeholder="Write your email"
+                name="user-email"
+              />
             </div>
 
             <div className="contact__form-div contact__form-area">
-              <label className="contact__form-tag" htmlFor="user-project">Project</label>
-              <textarea className="contact__form-input" id="user-project" placeholder="Write your project" name="user-project"></textarea>
+              <label className="contact__form-tag" htmlFor="user-project">
+                Project
+              </label>
+              <textarea
+                className="contact__form-input"
+                id="user-project"
+                placeholder="Write your project"
+                name="user-project"
+              ></textarea>
             </div>
 
             <button className="contact__button" type="submit">
