@@ -1,0 +1,68 @@
+.testimonial {
+  position: relative;
+
+  &__container {
+    overflow: initial;
+  }
+
+  &__swiper {
+    .swiper-slide {
+      margin-bottom: 4rem;
+    }
+
+    .swiper-button-prev,
+    .swiper-button-next {
+      width: initial;
+      height: initial;
+      margin: initial;
+      top: initial;
+      bottom: 0.5rem;
+    }
+
+    .swiper-button-prev {
+      left: calc(50% - 3rem);
+      right: auto;
+      &::after {
+        content: url("../../public/img/arrow-prev.svg");
+      }
+    }
+
+    .swiper-button-next {
+      left: auto;
+      right: calc(50% - 3rem);
+      &::after {
+        content: url("../../public/img/arrow-next.svg");
+      }
+    }
+  }
+
+  &__content {
+    text-align: center;
+  }
+
+  &__description {
+    font-family: var(--title-font);
+    color: var(--title-color);
+    margin-bottom: 1.5rem;
+  }
+
+  &__name {
+    font-family: var(--body-font);
+    font-size: var(--small-font-size);
+    margin-bottom: 0.25rem;
+  }
+
+  &__subtitle {
+    font-size: var(--smaller-font-size);
+    color: var(--text-color-light);
+  }
+
+  &__shape-waves {
+    width: 70px;
+    transform: rotate(30deg);
+    position: absolute;
+    top: 5rem;
+    right: -1.5rem;
+    opacity: 0.1;
+  }
+}

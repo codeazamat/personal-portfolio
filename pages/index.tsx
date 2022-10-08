@@ -6,6 +6,7 @@ import Qualification from '../components/Qualification'
 import Services from '../components/Services'
 import Projects from '../components/Projects'
 import Contact from '../components/Contact'
+import Testimonials from '../components/Testimonials'
 
 const Home: NextPage = () => {
   return (
@@ -20,6 +21,7 @@ const Home: NextPage = () => {
       <Qualification />
       <Services />
       <Projects />
+      <Testimonials />
       <Contact />
     </>
   )

@@ -26,15 +26,15 @@ const Projects = () => {
               },
               768: {
                 slidesPerView: 2,
-                spaceBetween: 25
+                spaceBetween: -56
               },
               1024: {
                 slidesPerView: 3,
-                spaceBetween: 25
+                spaceBetween: -56
               },
-              1280: {
+              1200: {
                 slidesPerView: 3,
-                spaceBetween: 25
+                spaceBetween: -56
               }
             }}
             navigation

@@ -1,5 +1,4 @@
 .projects {
-
   &__container {
     overflow: initial;
   }
@@ -23,21 +22,20 @@
     }
 
     .swiper-button-prev {
-      background-image: url("../../public/img/arrow-prev.svg");
+      background-image: url('../../public/img/arrow-prev.svg');
       left: 0;
       right: auto;
       top: 4.5rem;
     }
 
     .swiper-button-next {
-      background-image: url("../../public/img/arrow-next.svg");
+      background-image: url('../../public/img/arrow-next.svg');
       left: auto;
       right: 0;
       top: 4.5rem;
     }
 
     .swiper-pagination {
-
     }
 
     .swiper-pagination-bullet {
@@ -49,7 +47,8 @@
       background-color: var(--title-color);
     }
 
-    .swiper-horizontal > .swiper-pagination-bullets, .swiper-pagination-bullets.swiper-pagination-horizontal {
+    .swiper-horizontal > .swiper-pagination-bullets,
+    .swiper-pagination-bullets.swiper-pagination-horizontal {
       bottom: 0;
     }
   }
