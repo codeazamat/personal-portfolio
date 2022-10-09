@@ -18,7 +18,7 @@ const Hero = () => {
 
           <div className="hero__blob grid">
             <div className="hero__profile">
-              <Image src={Profile} width={150} height={260} alt={'Profile'} />
+              <Image src={Profile} width={170} height={260} alt={'Profile'} />
             </div>
 
             <div className="hero__shape-waves">
@@ -69,7 +69,7 @@ const Hero = () => {
             <h3 className="hero__info-title">Contact</h3>
             <p className="hero__info-description">
               Almazar, Tashkent <br />
-              codeazamat@email.com <br />
+              codeazamat@gmail.com <br />
               +998 (95) 004-40-48 <br />
             </p>
           </div>
@@ -78,7 +78,6 @@ const Hero = () => {
             <p className="hero__info-description">
               Website Design <br />
               UI/UX Design <br />
-              Animation <br />
             </p>
           </div>
         </div>
@@ -86,15 +85,15 @@ const Hero = () => {
         <div className="hero__info">
           <div>
             <h3 className="hero__info-title">Years of Experience</h3>
-            <p className="hero__info-number">08+</p>
+            <p className="hero__info-number">00+</p>
           </div>
           <div>
             <h3 className="hero__info-title">Completed Projects</h3>
-            <p className="hero__info-number">24+</p>
+            <p className="hero__info-number">00+</p>
           </div>
           <div>
             <h3 className="hero__info-title">Companies Worked</h3>
-            <p className="hero__info-number">07+</p>
+            <p className="hero__info-number">00+</p>
           </div>
         </div>
       </div>

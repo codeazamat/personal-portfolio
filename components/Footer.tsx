@@ -1,4 +1,5 @@
 import Link from 'next/link'
+import { Link as ScrollLink } from 'react-scroll'
 
 const Footer = () => {
   return (
@@ -9,21 +10,51 @@ const Footer = () => {
 
         <ul className="footer__list">
           <li className="footer__item">
-            <Link href="#home">
+            <ScrollLink
+              href="#hero"
+              className="nav__link"
+              activeClass="active"
+              to="hero"
+              spy={true}
+              smooth={true}
+              offset={0}
+              duration={500}
+              hashSpy={true}
+            >
               <a className="footer__link">Home</a>
-            </Link>
+            </ScrollLink>
           </li>
 
           <li className="footer__item">
-            <Link href="#skills">
+            <ScrollLink
+              href="#skills"
+              className="nav__link"
+              activeClass="active"
+              to="skills"
+              spy={true}
+              smooth={true}
+              offset={0}
+              duration={500}
+              hashSpy={true}
+            >
               <a className="footer__link">Skills</a>
-            </Link>
+            </ScrollLink>
           </li>
 
           <li className="footer__item">
-            <Link href="#projects">
+            <ScrollLink
+              href="#projects"
+              className="nav__link"
+              activeClass="active"
+              to="projects"
+              spy={true}
+              smooth={true}
+              offset={0}
+              duration={500}
+              hashSpy={true}
+            >
               <a className="footer__link">Projects</a>
-            </Link>
+            </ScrollLink>
           </li>
         </ul>
 

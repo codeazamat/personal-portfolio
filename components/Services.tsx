@@ -6,21 +6,6 @@ const Services = () => {
 
       <div className="services__container container grid section__border">
         <div className="services__card">
-          <i className="ri-layout-4-line"></i>
-
-          <h2 className="services__title">
-            UI/UX <br />
-            Designer
-          </h2>
-          <p className="services__description">
-            Service that provides the best quality and at the request of the
-            client, with professional work and customer support.
-          </p>
-
-          <div className="services__border"></div>
-        </div>
-
-        <div className="services__card">
           <i className="ri-code-line"></i>
 
           <h2 className="services__title">
@@ -36,11 +21,11 @@ const Services = () => {
         </div>
 
         <div className="services__card">
-          <i className="ri-quill-pen-line"></i>
+          <i className="ri-layout-4-line"></i>
 
           <h2 className="services__title">
-            Digital <br />
-            Animator
+            UI/UX <br />
+            Designer
           </h2>
           <p className="services__description">
             Service that provides the best quality and at the request of the
@@ -49,6 +34,7 @@ const Services = () => {
 
           <div className="services__border"></div>
         </div>
+
       </div>
     </section>
   )

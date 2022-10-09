@@ -77,6 +77,21 @@ const Skills = () => {
               <div className="skills__blob">
                 <div className="skills__blob-img">
                   <Image
+                    src={IconTypeScript}
+                    width={2194}
+                    height={2500}
+                    alt={'TypeScript'}
+                  />
+                </div>
+              </div>
+              <h3 className="skills__name">TypeScript</h3>
+              <span className="skills__subtitle">Basic</span>
+            </div>
+
+            <div className="skills__data">
+              <div className="skills__blob">
+                <div className="skills__blob-img">
+                  <Image
                     src={IconReact}
                     width={2194}
                     height={2500}
@@ -101,21 +116,6 @@ const Skills = () => {
               </div>
               <h3 className="skills__name">Redux</h3>
               <span className="skills__subtitle">Intermediate</span>
-            </div>
-
-            <div className="skills__data">
-              <div className="skills__blob">
-                <div className="skills__blob-img">
-                  <Image
-                    src={IconTypeScript}
-                    width={2194}
-                    height={2500}
-                    alt={'TypeScript'}
-                  />
-                </div>
-              </div>
-              <h3 className="skills__name">TypeScript</h3>
-              <span className="skills__subtitle">Basic</span>
             </div>
 
             <div className="skills__data">
@@ -169,51 +169,6 @@ const Skills = () => {
                 </div>
               </div>
               <h3 className="skills__name">Figma</h3>
-              <span className="skills__subtitle">Basic</span>
-            </div>
-
-            <div className="skills__data">
-              <div className="skills__blob">
-                <div className="skills__blob-img">
-                  <Image
-                    src={IconSketch}
-                    width={2500}
-                    height={2263}
-                    alt={'Sketch'}
-                  />
-                </div>
-              </div>
-              <h3 className="skills__name">Sketch</h3>
-              <span className="skills__subtitle">Basic</span>
-            </div>
-
-            <div className="skills__data">
-              <div className="skills__blob">
-                <div className="skills__blob-img">
-                  <Image
-                    src={IconXD}
-                    width={2500}
-                    height={2437}
-                    alt={'Adobe XD'}
-                  />
-                </div>
-              </div>
-              <h3 className="skills__name">Adobe XD</h3>
-              <span className="skills__subtitle">Basic</span>
-            </div>
-
-            <div className="skills__data">
-              <div className="skills__blob">
-                <div className="skills__blob-img">
-                  <Image
-                    src={IconInvision}
-                    width={2500}
-                    height={2500}
-                    alt={'InvisionApp'}
-                  />
-                </div>
-              </div>
-              <h3 className="skills__name">InvisionApp</h3>
               <span className="skills__subtitle">Basic</span>
             </div>
 

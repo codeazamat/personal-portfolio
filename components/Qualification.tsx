@@ -20,22 +20,6 @@ const Qualification = () => {
               <span className="qualification__country">Tashkent - Collage</span>
               <span className="qualification__year">2011 - 2014</span>
             </div>
-
-            <div>
-              <h3 className="qualification__name">UI/UX Design</h3>
-              <span className="qualification__country">
-                Institute - Tashkent
-              </span>
-              <span className="qualification__year">2021 - 2022</span>
-            </div>
-
-            <div>
-              <h3 className="qualification__name">Computer Engineer</h3>
-              <span className="qualification__country">
-                Institute - Tashkent
-              </span>
-              <span className="qualification__year">2021 - 2022</span>
-            </div>
           </div>
         </div>
 
@@ -47,20 +31,8 @@ const Qualification = () => {
           <div className="qualification__info">
             <div>
               <h3 className="qualification__name">Fontend Developer</h3>
-              <span className="qualification__country">Adobe - Spain</span>
-              <span className="qualification__year">2014 - 2019</span>
-            </div>
-
-            <div>
-              <h3 className="qualification__name">Software Engineer</h3>
-              <span className="qualification__country">Microsoft - Perú</span>
-              <span className="qualification__year">2018 - 2020</span>
-            </div>
-
-            <div>
-              <h3 className="qualification__name">Graphic Designer</h3>
-              <span className="qualification__country">Figma - Perú</span>
-              <span className="qualification__year">2020 - Present</span>
+              <span className="qualification__country">EPAM - Tashkent</span>
+              <span className="qualification__year">2022 - Present</span>
             </div>
           </div>
         </div>
