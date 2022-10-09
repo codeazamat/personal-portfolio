@@ -8,7 +8,7 @@ type FormValues = {
 }
 
 const Contact = () => {
-  const { register, handleSubmit, reset, formState: { errors, isValid } } = useForm<FormValues>({
+  const { register, handleSubmit, reset, formState: { errors } } = useForm<FormValues>({
     mode: 'onChange',
     defaultValues:{
       username: '',
@@ -115,7 +115,7 @@ const Contact = () => {
               {errors.message && <span className="contact__form-error">{errors.message.message}</span>}
             </div>
 
-            <button className="contact__button" type="submit" disabled={!isValid}>
+            <button className="contact__button" type="submit">
               Submit <i className="ri-arrow-right-up-line"></i>
             </button>
           </form>

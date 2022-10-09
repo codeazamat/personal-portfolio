@@ -132,9 +132,6 @@
     &:hover i {
       transform: translateX(0.25rem);
     }
-    &:disabled i {
-      transform: translateX(0);
-    }
 
     i {
       font-size: 1.5rem;
