@@ -68,7 +68,7 @@ const Footer = () => {
           </li>
 
           <li className="footer__socials-item">
-            <Link href="https://www.github.com/azamatcode/">
+            <Link href="https://www.github.com/codeazamat/">
               <a className="footer__socials-link" target="_blank">
                 <i className="ri-github-line"></i>
               </a>

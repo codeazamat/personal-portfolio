@@ -7,6 +7,7 @@ import Services from '../components/Services'
 import Projects from '../components/Projects'
 import Contact from '../components/Contact'
 import Testimonials from '../components/Testimonials'
+import ScrollUp from '../components/ScrollUp'
 
 const Home: NextPage = () => {
   return (
@@ -23,6 +24,7 @@ const Home: NextPage = () => {
       <Projects />
       <Testimonials />
       <Contact />
+      <ScrollUp />
     </>
   )
 }

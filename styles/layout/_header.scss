@@ -71,6 +71,10 @@
       font-size: var(--smaller-font-size);
       color: var(--text-color-light);
       transition: color 0.3s ease-in-out;
+      &.active {
+        color: var(--title-color);
+      }
+
       &:hover {
         color: var(--title-color);
       }
