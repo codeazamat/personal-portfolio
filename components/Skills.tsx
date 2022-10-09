@@ -2,16 +2,15 @@ import Image from 'next/image'
 import 'remixicon/fonts/remixicon.css'
 import IconHTML from '/public/img/html-1.svg'
 import IconCSS from '/public/img/css-3.svg'
+import IconSASS from '/public/img/sass-1.svg'
 import IconJS from '/public/img/logo-javascript.svg'
 import IconReact from '/public/img/react-2.svg'
+import IconNext from '/public/img/next-js.svg'
 import IconRedux from '/public/img/redux.svg'
 import IconTypeScript from '/public/img/typescript.svg'
 import IconGit from '/public/img/git-icon.svg'
 import IconDocker from '/public/img/docker.svg'
 import IconFigma from '/public/img/figma-1.svg'
-import IconSketch from '/public/img/sketch-2.svg'
-import IconXD from '/public/img/adobe-xd-1.svg'
-import IconInvision from '/public/img/invision.svg'
 import IconPS from '/public/img/adobe-photoshop-2.svg'
 
 const Skills = () => {
@@ -39,8 +38,8 @@ const Skills = () => {
                   />
                 </div>
               </div>
-              <h3 className="skills__name">HTML</h3>
-              <span className="skills__subtitle">Intermediate</span>
+              <h3 className="skills__name">HTML5</h3>
+              <span className="skills__subtitle">Advanced</span>
             </div>
 
             <div className="skills__data">
@@ -54,8 +53,23 @@ const Skills = () => {
                   />
                 </div>
               </div>
-              <h3 className="skills__name">CSS</h3>
+              <h3 className="skills__name">CSS3</h3>
               <span className="skills__subtitle">Advanced</span>
+            </div>
+
+            <div className="skills__data">
+              <div className="skills__blob">
+                <div className="skills__blob-img">
+                  <Image
+                    src={IconSASS}
+                    width={2183}
+                    height={2500}
+                    alt={'SASS, SCSS'}
+                  />
+                </div>
+              </div>
+              <h3 className="skills__name">SASS</h3>
+              <span className="skills__subtitle">Intermediate</span>
             </div>
 
             <div className="skills__data">
@@ -95,11 +109,26 @@ const Skills = () => {
                     src={IconReact}
                     width={2194}
                     height={2500}
-                    alt={'React Library'}
+                    alt={'React.js'}
                   />
                 </div>
               </div>
               <h3 className="skills__name">React</h3>
+              <span className="skills__subtitle">Intermediate</span>
+            </div>
+
+            <div className="skills__data">
+              <div className="skills__blob">
+                <div className="skills__blob-img">
+                  <Image
+                    src={IconNext}
+                    width={2194}
+                    height={2500}
+                    alt={'Next.js'}
+                  />
+                </div>
+              </div>
+              <h3 className="skills__name">Next</h3>
               <span className="skills__subtitle">Intermediate</span>
             </div>
 
