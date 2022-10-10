@@ -41,6 +41,7 @@
       &.show-menu {
         bottom: 2rem;
       }
+
       @media screen and (max-width: 1023px) {
         position: fixed;
         width: 88%;
@@ -71,6 +72,7 @@
       font-size: var(--smaller-font-size);
       color: var(--text-color-light);
       transition: color 0.3s ease-in-out;
+
       &.active {
         color: var(--title-color);
       }
@@ -78,6 +80,7 @@
       &:hover {
         color: var(--title-color);
       }
+
       i {
         font-size: 1.25rem;
       }
@@ -89,6 +92,19 @@
       bottom: 0.7rem;
       font-size: 1.5rem;
       cursor: pointer;
+    }
+
+    &__buttons {
+      display: flex;
+      align-items: center;
+      column-gap: 1.5rem;
+
+      .change-theme {
+        font-size: 1.25rem;
+        color: var(--title-color);
+        cursor: pointer;
+        transition: color 0.3s ease-in-out;
+      }
     }
   }
 }

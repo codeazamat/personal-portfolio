@@ -76,7 +76,7 @@ const Header = () => {
         </div>
 
         <div className="nav__buttons">
-          <i className="ri-moon-line change-theme" id="theme-button"></i>
+          <i className="ri-moon-line change-theme"></i>
 
           <div
             className="nav__toggle"
