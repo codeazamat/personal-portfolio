@@ -11,8 +11,8 @@ const Footer = () => {
         <ul className="footer__list">
           <li className="footer__item">
             <ScrollLink
+              className="footer__link"
               href="#hero"
-              className="nav__link"
               activeClass="active"
               to="hero"
               spy={true}
@@ -21,14 +21,14 @@ const Footer = () => {
               duration={500}
               hashSpy={true}
             >
-              <a className="footer__link">Home</a>
+              Home
             </ScrollLink>
           </li>
 
           <li className="footer__item">
             <ScrollLink
+              className="footer__link"
               href="#skills"
-              className="nav__link"
               activeClass="active"
               to="skills"
               spy={true}
@@ -37,14 +37,14 @@ const Footer = () => {
               duration={500}
               hashSpy={true}
             >
-              <a className="footer__link">Skills</a>
+              Skills
             </ScrollLink>
           </li>
 
           <li className="footer__item">
             <ScrollLink
+              className="footer__link"
               href="#projects"
-              className="nav__link"
               activeClass="active"
               to="projects"
               spy={true}
@@ -53,7 +53,7 @@ const Footer = () => {
               duration={500}
               hashSpy={true}
             >
-              <a className="footer__link">Projects</a>
+              Projects
             </ScrollLink>
           </li>
         </ul>

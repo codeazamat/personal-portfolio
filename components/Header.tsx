@@ -66,7 +66,6 @@ const Header = () => {
             ))}
           </ul>
 
-          {/* Close button */}
           <div
             className="nav__close"
             id="nav-close"
@@ -77,10 +76,8 @@ const Header = () => {
         </div>
 
         <div className="nav__buttons">
-          {/* Theme change button */}
-          {/*<i className="ri-moon-line change-theme" id="theme-button"></i>*/}
+          <i className="ri-moon-line change-theme" id="theme-button"></i>
 
-          {/* Toggle button */}
           <div
             className="nav__toggle"
             id="nav-toggle"
