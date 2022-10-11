@@ -102,7 +102,7 @@ const Header = () => {
         </div>
 
         <div className="nav__buttons">
-          <i className="ri-moon-line change-theme" onClick={activeMode}></i>
+          <i className={`${isDarkMode ? 'ri-sun-line' : 'ri-moon-line'}  change-theme`} onClick={activeMode}></i>
 
           <div
             className="nav__toggle"
