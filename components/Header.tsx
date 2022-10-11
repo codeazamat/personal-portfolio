@@ -2,6 +2,9 @@ import Link from 'next/link'
 import { useState } from 'react'
 import 'remixicon/fonts/remixicon.css'
 import { Link as ScrollLink } from 'react-scroll'
+import { useAppSelector, useAppDispatch } from '../app/hooks'
+import { toggleDarkMode } from '../features/darkMode/darkModeSlice'
+import { useEffect } from 'react'
 
 const navItems = [
   { id: 1, name: 'Home', href: 'hero', icon: 'ri-home-4-line' },
@@ -18,6 +21,8 @@ const navItems = [
 ]
 
 const Header = () => {
+  const isDarkMode = useAppSelector((state) => state.darkMode.isDarkMode)
+  const dispatch = useAppDispatch()
   const [mobileOpen, setMobileOpen] = useState(false)
 
   const handleMobileOpen = () => {
@@ -33,6 +38,28 @@ const Header = () => {
   const handleMobileToggle = () => {
     setMobileOpen(!mobileOpen)
   }
+
+  const activeMode = async () => {
+    dispatch(toggleDarkMode())
+    if (isDarkMode === true) {
+      document.body.classList.add('light')
+      document.body.classList.remove('dark')
+      await localStorage.setItem('theme', 'light-mode')
+    }
+    if (isDarkMode === false) {
+      document.body.classList.add('dark')
+      document.body.classList.remove('light')
+      await localStorage.setItem('theme', 'dark-mode')
+    }
+  }
+
+  useEffect(() => {
+    if (localStorage.getItem('theme') === 'light-mode') {
+      document.body.classList.add('light')
+    } else if (localStorage.getItem('theme') === 'dark-mode') {
+      document.body.classList.add('dark')
+    }
+  }, [])
 
   return (
     <header className="header" id="header">
@@ -55,7 +82,6 @@ const Header = () => {
                   to={item.href}
                   spy={true}
                   smooth={true}
-                  offset={0}
                   duration={500}
                   hashSpy={true}
                   onClick={handleMobileToggle}
@@ -76,7 +102,7 @@ const Header = () => {
         </div>
 
         <div className="nav__buttons">
-          <i className="ri-moon-line change-theme"></i>
+          <i className="ri-moon-line change-theme" onClick={activeMode}></i>
 
           <div
             className="nav__toggle"
